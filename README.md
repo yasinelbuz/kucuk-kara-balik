@@ -1,3 +1,3 @@
-Küçük Kara Balık kitabını çok sevdiğimden ona özel bir web sayfası yaptım.
+Küçük Kara Balık kitabını çok sevdiğim için ona özel bir web sayfası yaptım.
 
 keyifli okumalar... 
