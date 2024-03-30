@@ -2,7 +2,7 @@ import Components from "./components"
 import { useSite } from "./store/context"
 
 function App() {
-   const { activePage, setActivePage } = useSite()
+   const { activePage } = useSite()
 
    console.log((((activePage + 1) / 8) * 100 ) + "%")
 

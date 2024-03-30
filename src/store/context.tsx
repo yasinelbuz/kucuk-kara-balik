@@ -1,5 +1,5 @@
 // ./context/SiteContext.js
-import { createContext, useState, useEffect, useContext, ReactNode } from "react"
+import { createContext, useState, useContext, ReactNode } from "react"
 
 
 type PropTypes = {
@@ -13,8 +13,8 @@ const SiteContext = createContext({
 
 const SiteProvider = ({ children }:PropTypes) => {
   
-  const [activePage, setActivePage] = useState(0)
-  const [isOpenSidebar, setIsOpenSidebar] = useState(true)
+  const [activePage, setActivePage] = useState<number>(0)
+  const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(true)
   
   const data = {
     activePage,
