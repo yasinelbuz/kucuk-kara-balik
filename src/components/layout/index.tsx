@@ -1,15 +1,14 @@
-import { ReactNode } from 'react';
 import * as Styled from './styled';
 import Component from '../../components'
-
-type PropTypes = {
-  children : ReactNode
-}
+import { useSite } from '../../store/context';
 
 export default function Layout() {
+
+  const {isOpenSidebar} = useSite();
+
   return (
     <Styled.ContainerLayout>
-      <Styled.NavBar>
+      <Styled.NavBar isOpenSidebar={isOpenSidebar}>
         <Component.NavBar />
       </Styled.NavBar>
 

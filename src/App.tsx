@@ -1,11 +1,18 @@
 import Components from "./components"
+import { useSite } from "./store/context"
 
 function App() {
+   const { activePage, setActivePage } = useSite()
+
+   console.log((((activePage + 1) / 8) * 100 ) + "%")
 
   return (
-    <Components.Layout>
-      kücük kara balık
-    </Components.Layout>
+    <>
+      <div className="progressBar">
+        <div className="progressBar-percent" style={{width:(((activePage + 1) / 15) * 100 ) + "%"}} />
+      </div>
+      <Components.Layout />
+    </>
   )
 }
 
